@@ -10,3 +10,82 @@ body {
   margin: 0;
   min-height: 100%;
 }
+header {
+  background-color: orange;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header ul {
+  margin: 0px;
+  background-color: yellow;
+  list-style: none;
+  padding-left: 0;
+  text-align: right;
+  padding: 5px;
+}
+
+header li{
+  display: inline;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+header li a{
+  color: blue;
+  text-decoration: none;
+}
+
+header nav {
+  background-color: seagreen;
+}
+.hero {
+  flex: 1;
+  background-color:red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  border: thin solid #ddd;
+  margin: 16px;
+  box-shadow: 5px 5px 0px #DDD;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card img{
+  width: 100%;
+}
+
+.card h3 {
+  color: blue;
+  border-bottom: thin solid #666;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.card .content{
+  padding: 10px;
+}
+
+.card .content p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 720px){
+  .card {
+    display: flex;
+    align-items: center;
+  }
+  .card img{
+    felx: 1;
+    max-width: 300px;
+  }
+  .card .hero{
+    flex: 2;
+  }
+}
